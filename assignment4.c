@@ -44,7 +44,7 @@ void* consumer() {
 
     while (1) {
         
-        printf("myCoung: %d -> %d\n", myCount - 1, myCount);
+        printf("myCount: %d -> %d\n", myCount - 1, myCount);
 
         pthread_mutex_unlock(&myMutex); // Unlock the mutex
         printf("CONSUMER: myMutex unlocked\n");
